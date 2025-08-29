@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Chou Yuan-Hsi</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fc;
+      color: #1a1a1a;
+      padding: 40px;
+      margin: 0;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3px;
+      margin-left: 300px;
+    }
+    .paragraph {
+      max-width: 600px;
+      margin-bottom: 30px;
+      margin-left: 300px;
+    }
+
+    .section {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 60px;
+    }
+
+    .section img {
+      width: 200px;
+      height: auto;
+      margin-right: 30px;
+    }
+
+    .text-block {
+      max-width: 400px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 340px));
+      gap: 60px;
+      justify-content: center;
+      justify-items: center;
+      padding-left: 60px;
+      padding-right: 60px;
+      /* Ensure space on left/right edges */
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 320px));
+      gap: 60px;
+      justify-content: center;
+      justify-items: center;
+      padding-left: 60px;
+      padding-right: 60px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .container .grid-item {
+      max-width: 640px;
+    }
+
+    .grid-item {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      max-width: 340px;
+      width: 100%;
+      text-align: left;
+      overflow: hidden;
+    }
+
+    /* Responsive Instagram embed */
+    .grid-item blockquote.instagram-media {
+      max-width: 100% !important;
+      width: 100% !important;
+      box-sizing: border-box;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      transform: scale(0.9);
+      transform-origin: top center;
+      margin: 0 auto !important;
+      display: block;
+    }
+    .grid-item blockquote.instagram-media[style] {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    .grid-item:hover,
+    .grid-item:active {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-item p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .media-fixed {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .title-dec {
+      font-size: 28px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .divider {
+      height: 1px;
+      background-color: #ccc;
+      margin: 10px auto;
+      width: 20%;
+    }
+    .featured-container {
+      width: 80%;
+      margin: 0 auto;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    .featured-container .media-fixed {
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .grid-item a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Hashtag style and interaction */
+    a.hashtag {
+      color: #808080;
+      transition: background-color 0.3s ease;
+    }
+    .hashtag:hover,
+    .hashtag:focus {
+      background-color: #eee !important;
+    }
+    a.hashtag:hover,
+    a.hashtag:active {
+      background-color: #d3d3d3;
+    }
+    .noto-sans-tc-700 {
+      font-family: "Noto Sans TC", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="circle">
+      <h1 class="noto-sans-tc-700">Chou Yuan-Hsi</h1>
+    </div>
+  </div>
+
+  <!-- First paragraph -->
+  <div class="paragraph">
+    
+    <div style="font-size: 20px">
+        Hello! I am a journalism student at National Chengchi University with a strong interest in <strong>digital storytelling</strong> and <strong>multimedia</strong>. I previously worked as an intern at TVBS, China Times, Storm Media, and FTNN. Currently, I serve as a reporter for the international section of our campus media.
+    </div>
+  </div>
+  <div style="display: flex; justify-content: flex-start; gap: 5px; margin-left: 300px; margin-bottom: 20px;">
+    <a href="#videos" class="hashtag" style="background-color: #ddd; padding: 8px 16px; border-radius: 50px; text-decoration: none; font-weight: bold; color: black; font-size: 14px;">#Videos</a>
+    <a href="#writing" class="hashtag" style="background-color: #ddd; padding: 8px 16px; border-radius: 50px; text-decoration: none; font-weight: bold; color: black; font-size: 14px;">#Ｗritting</a>
+    <a href="#social" class="hashtag" style="background-color: #ddd; padding: 8px 16px; border-radius: 50px; text-decoration: none; font-weight: bold; color: black; font-size: 14px;">#Social Media</a>
+  </div>
+  <br>
+    <br>
+    <br>
+    <br>
+   <p id="videos" class="title-dec">Videos</p>
+   <div class="divider"></div>
+   <br><br>
+  <div class="grid-container">
+    <div class="grid-item">
+        <iframe class="media-fixed" src="https://www.youtube.com/embed/NDf99S2xtdU?si=LgPAnLHIYzkXYDsF" frameborder="0" allowfullscreen></iframe>
+        <p>This is a video news I co-produced with my partner. We reported on how the local government supports indigenous youth by organizing a singing competition. Our interviewees included the Hualien County Government administrator, contestants, audience, and local residents.</p>
+    
+    </div>
+    <div class="grid-item">
+      <iframe class="media-fixed" src="https://www.youtube.com/embed/rSH3WfulGOU?si=M-C-db7iyT1VNtVz" frameborder="0" allowfullscreen></iframe>
+      <p>We investigated aging infrastructure issues at a local high school that could pose safety concerns for students. However, the Taipei City Government is considering allocating the construction budget to the Shezi Island development project instead. We interviewed a city council member, an architect, and students to highlight the urgent need for funding to address the deteriorating condition of the school’s buildings.</p>
+    </div></div>
+  
+  <p id="writing" class="title-dec">Writing</p>
+  <div class="divider"></div>
+  <br><br>
+  <div class="grid-container">
+    <div class="grid-item">
+      <a href="https://unews.nccu.edu.tw/unews/korea-woman-protest/">
+        <img class="media-fixed" src="/Users/yuanhsichou/Desktop/portfolio/F2-8B-2D-6F-52-33-07-65-B6-EA-14-F5-D2-34-67-49.jpeg"alt="protest image"  />
+        <p>A controversy erupted at Dongduk Women’s University in South Korea after the school administration decided to transition the institution from a women-only university to a coeducational one without prior consultation with students. The unexpected announcement sparked widespread protests on campus.</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="/Users/yuanhsichou/Desktop/portfolio/example1.html">
+        <img class="media-fixed" src="/Users/yuanhsichou/Desktop/portfolio/D6-D0-3C-7F-58-89-78-49-DE-95-86-EF-7C-D6-0F-8D (2).jpeg" alt="protest image" />
+        <p>Since last year, many people in Georgia have taken to the streets to protest. They believe the election was unfair, with Russian influence and serious fraud involved.</p><span style="display: inline-block; margin-top: 10px; padding: 6px 12px; border-radius: 6px; background-color: #4F46E5; color: #fff; font-size: 12px; font-weight: bold;">English Version</span>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://unews.nccu.edu.tw/unews/Japan-election-participate/">
+        <img class="media-fixed" src="/Users/yuanhsichou/Desktop/portfolio/截圖 2025-07-17 下午1.30.47.png" alt="protest image" />
+        <p>A group of college students in Japan organized an event to encourage higher voter turnout among teenagers, while also exploring the reasons why many teenagers choose not to cast their ballots.</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="/Users/yuanhsichou/Desktop/portfolio/example2.html">
+        <img class="media-fixed" src="https://unews.nccu.edu.tw/File/Posts/3735/C1-50-3F-78-85-42-C3-DC-09-0F-F5-D8-96-42-43-57.JPG"alt="fans image"  />
+        <p>Taiwan’s ticket scalping issue highlights deeper problems within the ticketing system and venue allocation. We interviewed officials from the Ministry of Culture, a Taipei City Councilor, the CEO of a major ticketing platform, and fans to uncover the root causes.</p><span style="display: inline-block; margin-top: 10px; padding: 6px 12px; border-radius: 6px; background-color: #4F46E5; color: #fff; font-size: 12px; font-weight: bold;">English Version</span>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="/Users/yuanhsichou/Desktop/portfolio/example3.html">
+        <img class="media-fixed" src="/Users/yuanhsichou/Desktop/portfolio/EB-D6-C3-EE-51-04-06-43-5D-08-5E-A9-82-36-C0-EB (1).jpeg" alt="protest image" />
+        <p>Following an incident of covert filming in a gender-inclusive restroom, we found that there are currently no clear regulations governing the design and construction of such facilities. Through this report, we aim to explore the challenges of implementing gender-inclusive restrooms and whether these facilities should be standardized through policy.</p><span style="display: inline-block; margin-top: 10px; padding: 6px 12px; border-radius: 6px; background-color: #4F46E5; color: #fff; font-size: 12px; font-weight: bold;">English Version</span>
+      </a>
+      </div>
+    <div class="grid-item">
+      <a href="https://unews.nccu.edu.tw/unews/idol-fans-consume/">
+        <img class="media-fixed" src="https://unews.nccu.edu.tw/File/Posts/3739/7B-D8-25-EF-65-E3-FB-E4-7A-94-A7-F3-13-12-A8-3D.jpg" alt="protest image" />
+        <p>While observing how much effort fans devote to following their idols, we wanted to better understand the psychology and behavior behind fandom culture. We interviewed nearly 20 fans, as well as a counseling psychologist and professors in related fields, to analyze the consumer strategies of entertainment companies and explore how fans perceive their dedication.</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://harperchouu.github.io/englishversion-/test.html">
+        <img class="media-fixed" src="/Users/yuanhsichou/Desktop/portfolio/36-59-A4-B0-75-93-99-12-A0-FA-04-A6-59-3D-B4-28.jpg" alt="protest image" />
+        <p>By combining the fan culture report and the ticket scalping investigation, I designed a simulated ticketing system to help users experience the stress and urgency of competing for tickets. Through a scrollable video and an accumulating cost display, we also illustrated how merchandise and related products are marketed to fans and how these strategies drive further consumption beyond just the concert itself.</p><span style="display: inline-block; margin-top: 10px; padding: 6px 12px; border-radius: 6px; background-color: #4F46E5; color: #fff; font-size: 12px; font-weight: bold;">English Version</span>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://onepercent.storm.mg/article/4773103#gsc.tab=0">
+        <img class="media-fixed" src="https://image.cache.storm.mg/media/image/2023/04/10/20230410-094634_U26000_M843548_5757.JPG"alt="fans image"  />
+        <p>This is a featured report I wrote during my internship at Storm Media. Together with my editor, we interviewed the CEO of Philip Stein and helped promote their technology watch, which can detect heart rate and improve users’ sleep quality.</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://onepercent.storm.mg/article/4458215#gsc.tab=0">
+        <img class="media-fixed" src="https://image.cache.storm.mg/media/image/2022/08/16/20220816-041109_U6886_M785395_8163.jpg" alt="protest image" />
+        <p>I co-reported the report with my editor, where we interviewed the marketing manager of KIA about their new electric vehicle, the EV6.</p>
+      </a>
+      </div>
+  </div>
+
+  <p id="social" class="title-dec">Social Media</p>
+  <div class="divider"></div>
+  <br><br>
+    
+    <br><br>
+    <div class="container">
+    <div class="grid-item">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CvFPNbOPhy5/?img_index=1" data-instgrm-version="14" style="width:100%; max-width:640px; margin:0 auto;">
+      </blockquote>
+    </div>
+    <div class="grid-item">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C-pnm1pvLZk/" data-instgrm-version="14" style="width:100%; max-width:640px; margin:0 auto;">
+      </blockquote>
+    </div>
+    
+      <!-- 原有的 grid items... -->
+    
+      <!-- 新增 Facebook 嵌入 -->
+    
+
+      <div style="max-width: 500px; margin: 0 auto;">
+        <iframe 
+          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FnewsFTNN%2Fposts%2Fpfbid0a52J6zG58XzFDy5HvDiXyq432CUPhYbzygnU4WyLfrQVsiAunnhbeoWKPTU2dnSil&show_text=true&width=500"
+          width="100%" 
+          height="770" 
+          style="border:none;overflow:hidden;"
+          scrolling="no" 
+          frameborder="0" 
+          allowfullscreen="true" 
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+      </div>
+
+      <div style="max-width: 500px; margin: 0 auto;">
+        <iframe 
+          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FnewsFTNN%2Fposts%2Fpfbid0Hgtu91hv9xWmnHpqEMCkpUVdXxY6w65AX5mZ2GS55HSkMq2AkujRpb3MZy2KSFxhl&show_text=true&width=500"
+          width="100%" 
+          height="770" 
+          style="border:none;overflow:hidden;"
+          scrolling="no" 
+          frameborder="0" 
+          allowfullscreen="true" 
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+      </div>
+      <div style="width: 100%; max-width: 500px; margin: 0 auto;">
+        <iframe 
+          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FnewsFTNN%2Fposts%2Fpfbid02JybRWR3bjMGrTcTjnN4kNJS8BLqMKatV8D8JFsDg2iShwj3FA6SHqe3AbRMWPUVwl&show_text=true&width=500"
+          width="100%"
+          height="765"
+          style="border:none; overflow:hidden;"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+      </div>
+     
+    </div>
+  
+
+  </div>
+
+</body>
+<script async src="https://www.instagram.com/embed.js"></script>
+</html>
