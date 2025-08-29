@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Tickets from Facebook</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #f9f9f9;
+    }
+    #plefk {
+      width: 100%;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+    #popup-overlay button {
+      font-size: 18px;
+      padding: 10px 22px;
+      margin: 0 10px;
+      min-width: 70px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Scrollable Video: FB -->
+  <div style="position: fixed; top: 20px; right: 20px; z-index: 10000; font-size: 20px;">
+    💰Total Cost: NT$0
+  </div>
+
+  <!-- Scrollable Video: News -->
+  <style>
+    #hfdag .scrollable-video .section {
+      background-color: rgba(0, 0, 0, 0.7) !important;
+      color: white !important;
+    }
+    #hfdag .scrollable-video .section * {
+      color: white !important;
+    }
+  </style>
+
+  <div id="hfdag">
+    <script>
+      (function() {
+        var namespace = '@story-telling-reporter/react-embed-code-generator@2.2.13';
+        var pkg = 'scrollable-video';
+        if (typeof window != 'undefined') {
+          if (!window.hasOwnProperty(namespace)) {
+            window[namespace] = {};
+          }
+          if (window[namespace] && !window[namespace].hasOwnProperty(pkg)) {
+            window[namespace][pkg] = [];
+          }
+          if (Array.isArray(window[namespace][pkg])) {
+            var data = {
+              "video": {
+                "src": "https:\/\/harperchouu.github.io\/vediodemo\/scroll.mov",
+                "mobileSrc": "https:\/\/harperchouu.github.io\/vediodemo\/scroll.mov",
+                "duration": 10.4345
+              },
+              "captions": [
+                {
+                  "id": "pbeef",
+                  "width": "narrow",
+                  "alignment": "left",
+                  "startTime": 0.79,
+                  "rawContentState": {
+                    "blocks": [
+                      {
+                        "key": "3sqg1",
+                        "data": {},
+                        "text": "Let’s take a look at the process of buying scalped tickets.\nFacebook has many concert ticket groups, including both people reselling tickets at original prices and scalpers. Posts that mention 'not original price' or 'DM if you have a budget' usually indicate that the seller is a scalper selling at a higher price.",
+                        "type": "unstyled",
+                        "depth": 0,
+                        "entityRanges": [],
+                        "inlineStyleRanges": [{"style": "BOLD", "length": 61, "offset": 0}]
+                      }
+                    ],
+                    "entityMap": {}
+                  }
+                },
+                {
+                  "id": "fpkmd",
+                  "width": "narrow",
+                  "alignment": "left",
+                  "startTime": 2.35,
+                  "rawContentState": {
+                    "blocks": [
+                      {
+                        "key": "dv9sk",
+                        "data": {},
+                        "text": "Many fans who fail to get tickets during the official sale will scroll through Facebook groups looking for tickets being resold, hoping for a last chance to see their favorite concerts.",
+                        "type": "unstyled",
+                        "depth": 0,
+                        "entityRanges": [],
+                        "inlineStyleRanges": []
+                      }
+                    ],
+                    "entityMap": {}
+                  }
+                },
+                {
+                  "id": "hpcep",
+                  "width": "narrow",
+                  "alignment": "left",
+                  "startTime": 8.17,
+                  "rawContentState": {
+                    "blocks": [
+                      {
+                        "key": "aljgv",
+                        "data": {},
+                        "text": "Do you remember how much one ticket originally cost?",
+                        "type": "unstyled",
+                        "depth": 0,
+                        "entityRanges": [],
+                        "inlineStyleRanges": []
+                      },
+                      {
+                        "key": "ftae3",
+                        "data": {},
+                        "text": "The original price was NT$7,800, but scalped tickets were almost twice that!",
+                        "type": "unstyled",
+                        "depth": 0,
+                        "entityRanges": [],
+                        "inlineStyleRanges": []
+                      }
+                    ],
+                    "entityMap": {}
+                  }
+                }
+              ],
+              "darkMode": false,
+              "secondsPer100vh": 1.5,
+              "uuid": "25644e2e-f67a-4a1a-b914-5dc25558daa1"
+            };
+            window[namespace][pkg].push(data);
+          }
+        }
+      })()
+    </script>
+    <div id="25644e2e-f67a-4a1a-b914-5dc25558daa1"></div>
+    <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-video.js"></script>
+  </div>
+
+  <!-- Popup Dialog -->
+  <div id="popup-overlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:9999;">
+    <div style="background:#fff; padding:2rem; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.2); text-align:center;">
+      <p>Seeing this price that’s twice the original, do you still want to buy a scalped ticket?</p>
+      <button onclick="handleAnswer(true)">Yes</button>
+      <button onclick="handleAnswer(false)">No</button>
+    </div>
+  </div>
+
+  <script>
+    let popupShown = false;
+
+    window.addEventListener('scroll', function () {
+      const scrollBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight;
+      if (!popupShown && scrollBottom) {
+        document.getElementById('popup-overlay').style.display = 'flex';
+        popupShown = true;
+      }
+    });
+
+    function handleAnswer(isYes) {
+      window.location.href = isYes ? 'yes.html' : 'no.html';
+    }
+  </script>
+</body>
+</html>
+
+
