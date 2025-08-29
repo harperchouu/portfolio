@@ -1,9 +1,7 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+<meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <title>Chou Yuan-Hsi</title>
@@ -15,13 +13,11 @@
       padding: 40px;
       margin: 0;
     }
-
-    h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
       font-family: 'Inter', sans-serif;
       font-weight: 600;
     }
-
-    .header {
+.header {
       display: flex;
       align-items: center;
       margin-bottom: 3px;
@@ -32,24 +28,20 @@
       margin-bottom: 30px;
       margin-left: 300px;
     }
-
-    .section {
+.section {
       display: flex;
       align-items: flex-start;
       margin-bottom: 60px;
     }
-
-    .section img {
+.section img {
       width: 200px;
       height: auto;
       margin-right: 30px;
     }
-
-    .text-block {
+.text-block {
       max-width: 400px;
     }
-
-    .grid-container {
+.grid-container {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 340px));
       gap: 60px;
@@ -73,8 +65,7 @@
     .container .grid-item {
       max-width: 640px;
     }
-
-    .grid-item {
+.grid-item {
       background: #ffffff;
       border-radius: 10px;
       padding: 20px;
@@ -85,9 +76,7 @@
       text-align: left;
       overflow: hidden;
     }
-
-    /* Responsive Instagram embed */
-    .grid-item blockquote.instagram-media {
+.grid-item blockquote.instagram-media {
       max-width: 100% !important;
       width: 100% !important;
       box-sizing: border-box;
@@ -102,26 +91,22 @@
       width: 100% !important;
       max-width: 100% !important;
     }
-
-    .grid-item:hover,
+.grid-item:hover,
     .grid-item:active {
       transform: translateY(-5px);
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
     }
-
-    .grid-item p {
+.grid-item p {
       font-size: 14px;
       line-height: 1.5;
     }
-
-    .media-fixed {
+.media-fixed {
       width: 100%;
       aspect-ratio: 16 / 9;
       object-fit: cover;
       border-radius: 8px;
     }
-
-    .title-dec {
+.title-dec {
       font-size: 28px;
       text-align: center;
       margin-left: auto;
@@ -144,14 +129,11 @@
       height: 300px;
       object-fit: cover;
     }
-
-    .grid-item a {
+.grid-item a {
       text-decoration: none;
       color: black;
     }
-
-    /* Hashtag style and interaction */
-    a.hashtag {
+a.hashtag {
       color: #808080;
       transition: background-color 0.3s ease;
     }
@@ -183,7 +165,7 @@
   <!-- First paragraph -->
   <div class="paragraph">
     
-    <div style="font-size: 20px">
+<div style="font-size: 20px">
         Hello! I am a journalism student at National Chengchi University with a strong interest in <strong>digital storytelling</strong> and <strong>multimedia</strong>. I previously worked as an intern at TVBS, China Times, Storm Media, and FTNN. Currently, I serve as a reporter for the international section of our campus media.
     </div>
   </div>
@@ -202,7 +184,7 @@
   <div class="grid-container">
     <div class="grid-item">
         <iframe class="media-fixed" src="https://www.youtube.com/embed/NDf99S2xtdU?si=LgPAnLHIYzkXYDsF" frameborder="0" allowfullscreen></iframe>
-        <p>This is a video news I co-produced with my partner. We reported on how the local government supports indigenous youth by organizing a singing competition. Our interviewees included the Hualien County Government administrator, contestants, audience, and local residents.</p>
+   <p>This is a video news I co-produced with my partner. We reported on how the local government supports indigenous youth by organizing a singing competition. Our interviewees included the Hualien County Government administrator, contestants, audience, and local residents.</p>
     
     </div>
     <div class="grid-item">
@@ -275,7 +257,7 @@
   <br><br>
     
     <br><br>
-    <div class="container">
+<div class="container">
     <div class="grid-item">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CvFPNbOPhy5/?img_index=1" data-instgrm-version="14" style="width:100%; max-width:640px; margin:0 auto;">
       </blockquote>
@@ -284,13 +266,10 @@
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C-pnm1pvLZk/" data-instgrm-version="14" style="width:100%; max-width:640px; margin:0 auto;">
       </blockquote>
     </div>
-    
-      <!-- 原有的 grid items... -->
-    
-      <!-- 新增 Facebook 嵌入 -->
+  
     
 
-      <div style="max-width: 500px; margin: 0 auto;">
+   <div style="max-width: 500px; margin: 0 auto;">
         <iframe 
           src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FnewsFTNN%2Fposts%2Fpfbid0a52J6zG58XzFDy5HvDiXyq432CUPhYbzygnU4WyLfrQVsiAunnhbeoWKPTU2dnSil&show_text=true&width=500"
           width="100%" 
@@ -301,10 +280,10 @@
           allowfullscreen="true" 
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
         </iframe>
-      </div>
+    </div>
 
-      <div style="max-width: 500px; margin: 0 auto;">
-        <iframe 
+   <div style="max-width: 500px; margin: 0 auto;">
+      <iframe 
           src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FnewsFTNN%2Fposts%2Fpfbid0Hgtu91hv9xWmnHpqEMCkpUVdXxY6w65AX5mZ2GS55HSkMq2AkujRpb3MZy2KSFxhl&show_text=true&width=500"
           width="100%" 
           height="770" 
